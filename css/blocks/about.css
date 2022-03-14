@@ -1,0 +1,42 @@
+.about {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background-color: var(--bg-primary);
+  font-size: 18px;
+  text-align: center;
+}
+
+.about-title {
+  margin: 0;
+  padding: 24px 0;
+}
+
+.about-txt {
+  margin: 0;
+}
+
+.about-txt:last-child {
+  padding-bottom: 24px;
+}
+
+@media (max-width:800px) {
+  .about {
+    padding: 0 24px;
+  }
+  .about-title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width:801px) {
+  .about {
+    padding: 0 11%;
+  }
+
+  .about-title {
+    font-size: 36px;
+  }
+}

@@ -1,57 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-    <title>Grid Corona</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
-<body>
-    <div class="container">
-        <div class="box">
-            <div class="content">
-                <img src="img/1.png" alt="">
-                <p>Чаще мойте руки с мылом и водой.</p>
-            </div>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="theme-color" content="#0B0D12" />
+    <link rel="icon" sizes="192x192" href="LogoStr.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="page-body">
+    <header class="header">
+      <div class="header-logo">
+        <img class="logo-img" src="img/LogoStr.png" alt="" />
+        <p class="logo-title">Сергей Стрекалов</p>
+        <p class="logo-txt">
+          Frontend&nbsp;-&nbsp;разработчик 35&nbsp;лет&nbsp;Москва
+        </p>
+      </div>
+      <nav class="header-menu">
+        <button class="menu-button" type="button">
+          <div class="upper"></div>
+          <div class="middle"></div>
+          <div class="bottom"></div>
+        </button>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link menu-link-active" href="">Главная</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="">Обо&nbsp;мне</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="">Skills</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="">Работы</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="">Учеба</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <img class="foto-img2" src="img/foto_Str_2.jpg" alt="foto_of_me">
+      <img class="foto-img1" src="img/foto_Str_1.jpg" alt="foto_of_me">
+    </header>
+    <main class="content">
+      <div class="about">
+        <h4 class="about-title">Обо мне</h4>
+        <p class="about-txt">Меня зовут Сергей - я начинающий front-end разработчик.</p>
+        <p class="about-txt">Заканчил учебу по профессии “Frontend-разработчик” в Geekbrains.</p>
+        <p class="about-txt">Готов реализовать
+          отличные проекты с замечательными людьми.</p>
+      </div>
+      <div class="skills">
+        <h4 class="skills-title">Skills</h4>
+        <div class="skills-name">
+          <div class="skill">
+            <img class="skill-logo" src="img/html.png" alt="logo_html5">
+            <h5 class="skill-name">HTML5</h5>
+          </div>
+          <div class="skill">
+            <img class="skill-logo" src="img/css.png" alt="logo_html5">
+            <h5 class="skill-name">CSS 3</h5>
+          </div>
+          <div class="skill">
+            <img class="skill-logo" src="img/js.png" alt="logo_html5">
+            <h5 class="skill-name">JavaScript</h5>
+          </div>
+          <div class="skill">
+            <img class="skill-logo" src="img/sass.png" alt="logo_html5">
+            <h5 class="skill-name">SASS</h5>
+          </div>
+          <div class="skill">
+            <img class="skill-logo" src="img/bootstrap.png" alt="logo_html5">
+            <h5 class="skill-name">Bootstrap</h5>
+          </div>
+          <div class="skill">
+            <img class="skill-logo" src="img/ps.png" alt="logo_html5">
+            <h5 class="skill-name">Photoshop</h5>
+          </div>
+          <div class="skill">
+            <img class="skill-logo" src="img/Figma.png" alt="logo_html5">
+            <h5 class="skill-name">Figma</h5>
+          </div>
+          <div class="skill">
+            <img class="skill-logo" src="img/Gh.png" alt="logo_html5">
+            <h5 class="skill-name">Github</h5>
+          </div>
         </div>
-        <div class="box">
-            <div class="content">
-                <img src="img/2.png" alt="">
-                <p>Когда кашляете и чихаете прикрывайте рот согнутым локтем или тканью.</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="content">
-                <img src="img/3.png" alt="">
-                <p>Избегайте путешествий если у вас температура или кашель.</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="content">
-                <img src="img/4.png" alt="">
-                <p>Если у вас температура, кашель и тяжело дышите как можно раньше обратитесь за медицинской помощью.</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="content">
-                <img src="img/5.png" alt="">
-                <p>Если вы кашляете или чихаете, надевайте маску. Изучите как использовать её должным образом.</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="content">
-                <img src="img/6.png" alt="">
-                <p>Ешьте только хорошо приготовленную пищу.</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="content">
-                <img src="img/7.png" alt="">
-                <p>Избегайте тесного контакта с больными животными.</p>
-            </div>
-        </div>
-    </div>
-</body>
+      </div>
+    </main>
+    <script>
+      //active menu-button menu-list mobile
+      const menuButton = document.querySelector(".menu-button");
+      const menuList = document.querySelector(".menu-list");
+      const menuHeader = document.querySelector(".header");
+      const menuContent = document.querySelector(".content");
+
+      menuButton.addEventListener("click", () => {
+        let expanded = menuButton.getAttribute("aria-expanded") === "true";
+        menuButton.setAttribute("aria-expanded", !expanded);
+        menuButton.classList.toggle("active");
+        menuList.classList.toggle("menu-list-open");
+        menuHeader.classList.toggle("header-open");
+        menuContent.classList.toggle("content-close");
+      });
+
+      //transparent header start
+      window.onscroll = function () {
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop; // Получаем положение скролла
+        if (scrolled !== 0) {
+          document.querySelector(".header").style.backgroundColor =
+            "var(--bg-secondary-10a)";
+        } else {
+          document.querySelector(".header").style.backgroundColor = "none";
+        }
+      };
+    </script>
+  </body>
 </html>
-<!--
-Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
--->

@@ -1,0 +1,66 @@
+/* @font-face {
+  font-family: montserrat-bold;
+  src: url(../../fonts/montserrat-bold.ttf);
+} */
+
+@font-face {
+  font-family: montserrat-regular;
+  src: url(../../fonts/montserrat-regular.ttf);
+}
+
+:root {
+  --text-primary: #fff;
+  --text-secondary: #828282; /*бледно белый*/
+  --bg-primary: #002650;
+  --bg-secondary: #0B0D12;
+  --bg-secondary-10a: rgb(11,13,18,0.9);
+  --bottom-primary: #006fb2;
+  --bottom-secondary: #002650;
+  --bottom-secondary: rgba(255,255,255,0.5); /*прозрачный/бледно белый*/
+  --link-color: #00aeff; /*+ border*/
+  --menu-bcg: #151A23;
+}
+
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar:vertical {
+  height: 12px;
+}
+body::-webkit-scrollbar:horizontal {
+  height: 12px;
+}
+
+body::-webkit-scrollbar {
+  width:0.5rem !important;
+  -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #0B0D12 !important;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #006fb2 !important;
+}
+
+.page {
+  scrollbar-width: thin;
+  scrollbar-color:#006fb2 #0B0D12;
+}
+
+.page {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: montserrat-regular, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}

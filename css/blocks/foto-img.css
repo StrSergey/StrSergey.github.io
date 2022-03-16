@@ -1,16 +1,6 @@
-.foto-img1, .foto-img2 {
+.foto-img {
   padding-top: 23px;
-  width: 100%;
-}
-
-@media (min-width:801px) {
-  .foto-img2 {
-    display: none;
-  }
-}
-
-@media (max-width:800px) {
-  .foto-img1 {
-    display: none;
-  }
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }

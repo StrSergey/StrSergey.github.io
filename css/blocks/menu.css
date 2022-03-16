@@ -1,6 +1,6 @@
 /* --------------button--------------*/
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .menu-button {
     position: fixed;
     z-index: 1;
@@ -53,7 +53,7 @@
   }
 }
 
-@media (min-width:801px) {
+@media (min-width: 801px) {
   .menu-button {
     display: none;
   }
@@ -67,7 +67,7 @@
   /* z-index: -2; */
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .header-menu {
     position: absolute;
     display: grid;
@@ -88,18 +88,19 @@
     box-shadow: 0 0 0 60vh var(--bg-secondary-10a);
     width: 50%;
     left: 50%;
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
     transition: opacity 0.5s ease-in-out;
   }
 
   .menu-list-open {
     display: grid;
-    opacity: 1;
+    /* opacity: 1; */
     z-index: 3;
   }
 }
 
-@media (min-width:801px) {
+@media (min-width: 801px) {
   .menu-list {
     border-bottom: 1px solid var(--text-secondary);
     display: grid;
@@ -129,7 +130,7 @@
   color: var(--text-primary);
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .menu-item {
     padding-bottom: 20px;
   }

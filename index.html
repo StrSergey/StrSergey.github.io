@@ -45,51 +45,116 @@
           </li>
         </ul>
       </nav>
-      <img class="foto-img2" src="img/foto_Str_2.jpg" alt="foto_of_me">
-      <img class="foto-img1" src="img/foto_Str_1.jpg" alt="foto_of_me">
+      <picture>
+        <source media="(max-width: 800px)" srcset="img/mobile/foto_Str_2.jpg" />
+        <source
+          media="(min-width: 801px)"
+          srcset="img/desktop/foto_Str_1.jpg"
+        />
+        <img class="foto-img" src="img/foto_Str.png" alt="foto_of_me" />
+      </picture>
     </header>
     <main class="content">
       <div class="about">
         <h4 class="about-title">Обо мне</h4>
-        <p class="about-txt">Меня зовут Сергей - я начинающий front-end разработчик.</p>
-        <p class="about-txt">Заканчил учебу по профессии “Frontend-разработчик” в Geekbrains.</p>
-        <p class="about-txt">Готов реализовать
-          отличные проекты с замечательными людьми.</p>
+        <p class="about-txt">
+          Меня зовут Сергей - я начинающий front-end разработчик.
+        </p>
+        <p class="about-txt">
+          Заканчил учебу по профессии “Frontend-разработчик” в Geekbrains.
+        </p>
+        <p class="about-txt">
+          Готов реализовать отличные проекты с замечательными людьми.
+        </p>
       </div>
       <div class="skills">
         <h4 class="skills-title">Skills</h4>
         <div class="skills-name">
           <div class="skill">
-            <img class="skill-logo" src="img/html.png" alt="logo_html5">
+            <img class="skill-logo" src="img/html.png" alt="logo_html5" />
             <h5 class="skill-name">HTML5</h5>
           </div>
           <div class="skill">
-            <img class="skill-logo" src="img/css.png" alt="logo_html5">
+            <img class="skill-logo" src="img/css.png" alt="logo_html5" />
             <h5 class="skill-name">CSS 3</h5>
           </div>
           <div class="skill">
-            <img class="skill-logo" src="img/js.png" alt="logo_html5">
+            <img class="skill-logo" src="img/js.png" alt="logo_html5" />
             <h5 class="skill-name">JavaScript</h5>
           </div>
           <div class="skill">
-            <img class="skill-logo" src="img/sass.png" alt="logo_html5">
+            <img class="skill-logo" src="img/sass.png" alt="logo_html5" />
             <h5 class="skill-name">SASS</h5>
           </div>
           <div class="skill">
-            <img class="skill-logo" src="img/bootstrap.png" alt="logo_html5">
+            <img class="skill-logo" src="img/bootstrap.png" alt="logo_html5" />
             <h5 class="skill-name">Bootstrap</h5>
           </div>
           <div class="skill">
-            <img class="skill-logo" src="img/ps.png" alt="logo_html5">
+            <img class="skill-logo" src="img/ps.png" alt="logo_html5" />
             <h5 class="skill-name">Photoshop</h5>
           </div>
           <div class="skill">
-            <img class="skill-logo" src="img/Figma.png" alt="logo_html5">
+            <img class="skill-logo" src="img/Figma.png" alt="logo_html5" />
             <h5 class="skill-name">Figma</h5>
           </div>
           <div class="skill">
-            <img class="skill-logo" src="img/Gh.png" alt="logo_html5">
+            <img class="skill-logo" src="img/Gh.png" alt="logo_html5" />
             <h5 class="skill-name">Github</h5>
+          </div>
+        </div>
+      </div>
+      <div class="works">
+        <h4 class="works-title">Работы</h4>
+        <div class="works-name">
+          <div class="works-img">
+            <picture>
+              <source
+                media="(max-width: 800px)"
+                srcset="img/mobile/daria_sml_1.jpg"
+              />
+              <source
+                media="(min-width: 801px)"
+                srcset="img/desktop/daria_bg_1.jpg"
+              />
+              <img class="work-img" src="img/foto_Str.png" alt="daria_screen" />
+            </picture>
+            <picture>
+              <source
+                media="(max-width: 800px)"
+                srcset="img/mobile/daria_sml_2.jpg"
+              />
+              <source
+                media="(min-width: 801px)"
+                srcset="img/desktop/daria_bg_2.jpg"
+              />
+              <img class="work-img" src="img/foto_Str.png" alt="daria_screen" />
+            </picture>
+            <picture>
+              <source
+                media="(max-width: 800px)"
+                srcset="img/mobile/daria_sml_3.jpg"
+              />
+              <source
+                media="(min-width: 801px)"
+                srcset="img/desktop/daria_bg_3.jpg"
+              />
+              <img class="work-img" src="img/foto_Str.png" alt="daria_screen" />
+            </picture>
+          </div>
+          <div class="work-header">
+            <div class="work-header-title">лендинг</div>
+            <div class="work-header-arrow">></div>
+            <div class="work-header-txt">Одностраничный лендинг</div>
+          </div>
+          <div class="descr">
+            <div class="descr-date">май 2020</div>
+            <div class="descr-txt">
+              Разработка дизайна и простой анимации небольшого одностраничного
+              сайта для коуч-консультанта, материал был частитчно перенесен с
+              Tilda.
+            </div>
+            <a class="descr-link" href="">Главная</a>
           </div>
         </div>
       </div>

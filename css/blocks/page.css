@@ -14,9 +14,10 @@
   --bg-primary: #002650;
   --bg-secondary: #0B0D12;
   --bg-secondary-10a: rgb(11,13,18,0.9);
-  --bottom-primary: #006fb2;
-  --bottom-secondary: #002650;
-  --bottom-secondary: rgba(255,255,255,0.5); /*прозрачный/бледно белый*/
+  --bottom-primary: #006fb2; 
+  --bottom-secondary: #828282;
+  /* --bottom-secondary: rgba(255,255,255,0.5); прозрачный/бледно белый */
+  --bottom-hover: #00aeff;
   --link-color: #00aeff; /*+ border*/
   --menu-bcg: #151A23;
 }

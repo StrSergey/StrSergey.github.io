@@ -33,31 +33,46 @@
   }
 }
 /* ---------------- works-name ---------------- */
-.works-img {
-  margin: 0;
+.works-name {
   padding: 0;
-  display: flex;
-  width: 100%;
-  justify-content: center;
+  margin: 0;
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--text-secondary);
 }
 
 .work-img {
-  padding: 0 3px;
-  display: flex;
   margin: 0 auto;
+  padding: 0;
+  display: flex;
   max-width: 100%;
 }
 
-/* @media (max-width: 800px) {
-  .work-img {
-    max-height: 300px;
-  }
-} */
+.work-header {
+  margin: 10px 0;
+  padding: 0;
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  grid-template-columns: 30% 10% 50%;
+}
 
-/* @media (min-width: 801px) {
-  .work-img {
-    max-height: 650px;
-    max-width: 100%;
-  }
-} */
+.work-header-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align-last: left;
+}
 
+.work-header-txt {
+  font-size: 14px;
+  text-align: right;
+}
+
+.work-header-arrow {
+  cursor: pointer;
+  fill: var(--bottom-primary);
+}
+
+.work-header-arrow:hover {
+  fill: var(--bottom-hover);
+}

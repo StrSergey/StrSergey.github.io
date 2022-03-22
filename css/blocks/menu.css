@@ -1,4 +1,9 @@
 /* --------------button--------------*/
+.menu-button:hover .upper, 
+.menu-button:hover .middle, 
+.menu-button:hover .bottom {
+  background-color: var(--bottom-hover);
+}
 
 @media (max-width: 800px) {
   .menu-button {
@@ -7,26 +12,27 @@
     cursor: pointer;
     height: 32px;
     width: 32px;
-    /* display: block; */
+    /* display: block;
+    justify-self: end; */
     display: grid;
+    justify-self: end;
     padding: 0;
     margin-top: 24px;
     margin-right: 24px;
     border: none;
     background-color: transparent;
     z-index: 10;
-    justify-self: end;
     outline: none;
   }
 
   .menu-button .upper,
   .menu-button .middle,
   .menu-button .bottom {
-    background-color: var(--text-primary);
+    background-color: var(--bottom-primary);
     height: 3px;
     width: 100%;
-    /* margin: 8px auto; */
-    margin: 0;
+    margin: 4px auto;
+    /* margin: 0; */
     transform-origin: top right;
     transition: 0.3s ease-out;
     contain: "";
@@ -37,18 +43,18 @@
   }
 
   .menu-button.active .upper {
-    /* transform: rotate(-45deg) translate(-4px, -6px); */
-    transform: rotate(-45deg) translate(-4px, -8px);    
+    transform: rotate(-45deg) translate(-4px, -6px);
+    /* transform: rotate(-45deg) translate(-4px, -8px);     */
     height: 4px;
     opacity: 1;
-    background-color: var(--text-secondary);
+    background-color: var(--bottom-secondary);
   }
 
   .menu-button.active .bottom {
-    transform: rotate(45deg) translate(-4px, 3px);
+    transform: rotate(45deg) translate(-4px, 2px);
     height: 4px;
     opacity: 1;
-    background-color: var(--text-secondary);
+    background-color: var(--bottom-secondary);
   }
 
   .menu-button.active .middle {

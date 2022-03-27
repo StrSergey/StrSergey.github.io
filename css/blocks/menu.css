@@ -15,10 +15,12 @@
     /* display: block;
     justify-self: end; */
     display: grid;
-    justify-self: end;
+    /* justify-self: end; */
     padding: 0;
-    margin-top: 24px;
-    margin-right: 24px;
+    /* margin-top: 24px;
+    margin-right: 24px; */
+    top: 24px;
+    right: 24px;
     border: none;
     background-color: transparent;
     z-index: 10;
@@ -93,13 +95,12 @@
     padding-bottom: 24px;
     padding-left: 24px;
     background-color: var(--menu-bcg);
-    /* box-shadow: 0 50vh 0 50vh var(--bg-secondary-10a); */
     box-shadow: 0 0 0 60vh var(--bg-secondary-10a);
     width: 50%;
     left: 50%;
     /* opacity: 0; */
     display: none;
-    transition: opacity 0.5s ease-in-out;
+    /* transition: opacity 1s ease-in-out; */
   }
 
   .menu-list-open {

@@ -34,6 +34,7 @@
 }
 /* ---------------- work ---------------- */
 .works-name {
+  position:relative;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -84,9 +85,9 @@
   transition: 0.2s linear;
 }
 
-.work-header-arrow:active {
-  transition: rotate(180deg) 0.2s linear;
-  transform: rotate(180deg);
+.work-header-arrow.active {
+  transition: rotate(270deg) 0.9s linear;
+  transform: rotate(270deg);
   fill: var(--bottom-hover);
 }
 
@@ -100,12 +101,18 @@
   padding: 0 16px;
   top: 0px;
   display: flex;
-  /* display: none; */
   width: 100%;
-  height: 100%;
+  height: 0%;
   justify-content: space-between;
   flex-direction: column;
+  transition: height 1s;
+  visibility: hidden;
+}
+.descr.active {
+  height: 100%;
   background-color: var(--bg-primary-20);
+  transform: height(100%);
+  visibility: visible;
 }
 
 .descr-date {

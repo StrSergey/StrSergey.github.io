@@ -139,9 +139,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="works">
-        <h4 class="works-title">Работы</h4>
         <div class="works-name">
           <div class="work-header">
             <div class="work-header-title">лендинг</div>
@@ -164,12 +161,21 @@
               />
               <img class="work-img" src="img/foto_Str.png" alt="daria_screen" />
             </picture>
+            <div class="descr">
+              <div class="descr-date">май 2020</div>
+              <div class="descr-txt">
+                Разработка дизайна и простой анимации небольшого одностраничного
+                сайта для коуч-консультанта, материал был частитчно перенесен с
+                Tilda.
+              </div>
+              <a class="descr-link" href="">Главная</a>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <script>
-      //active menu-button menu-list mobile
+      //active menu-button menu-list mobile----------------------
       const menuButton = document.querySelector(".menu-button");
       const menuList = document.querySelector(".menu-list");
       const menuHeader = document.querySelector(".header");
@@ -184,7 +190,16 @@
         menuContent.classList.toggle("content-close");
       });
 
-      //transparent header start
+      //active descr------------------------------
+      const headerArrow = document.querySelector(".work-header-arrow");
+      const workDescr = document.querySelector(".descr");
+
+      headerArrow.addEventListener("click", () => {
+        headerArrow.classList.toggle("active");
+        workDescr.classList.toggle("active");
+      });
+
+      //transparent header start-----------------------------
       window.onscroll = function () {
         var scrolled = window.pageYOffset || document.documentElement.scrollTop; // Получаем положение скролла
         if (scrolled !== 0) {

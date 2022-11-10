@@ -5,20 +5,15 @@
   background-color: var(--bottom-hover);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .menu-button {
     position: fixed;
     z-index: 1;
     cursor: pointer;
     height: 32px;
     width: 32px;
-    /* display: block;
-    justify-self: end; */
     display: grid;
-    /* justify-self: end; */
     padding: 0;
-    /* margin-top: 24px;
-    margin-right: 24px; */
     top: 24px;
     right: 24px;
     border: none;
@@ -34,10 +29,9 @@
     height: 3px;
     width: 100%;
     margin: 4px auto;
-    /* margin: 0; */
     transform-origin: top right;
     transition: 0.3s ease-out;
-    contain: "";
+    /* contain: ""; */
   }
 
   .menu-button .upper {
@@ -46,7 +40,6 @@
 
   .menu-button.active .upper {
     transform: rotate(-45deg) translate(-4px, -6px);
-    /* transform: rotate(-45deg) translate(-4px, -8px);     */
     height: 4px;
     opacity: 1;
     background-color: var(--bottom-secondary);
@@ -64,7 +57,7 @@
   }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 901px) {
   .menu-button {
     display: none;
   }
@@ -75,10 +68,9 @@
 .menu-list {
   list-style: none;
   font-size: 18px;
-  /* z-index: -2; */
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .header-menu {
     position: absolute;
     display: grid;
@@ -95,22 +87,21 @@
     padding-bottom: 24px;
     padding-left: 24px;
     background-color: var(--menu-bcg);
-    box-shadow: 0 0 0 60vh var(--bg-secondary-10a);
+    box-shadow: none;
     width: 50%;
-    left: 50%;
-    /* opacity: 0; */
-    display: none;
-    /* transition: opacity 1s ease-in-out; */
+    left: 150%;
+    display: grid;
+    transition: left 0.5s ease-in-out, box-shadow 1s ease-in-out;
   }
 
   .menu-list-open {
-    display: grid;
-    /* opacity: 1; */
+    left: 50%;
+    box-shadow: 0 0 0 60vh var(--bg-secondary-10a);
     z-index: 3;
   }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 901px) {
   .menu-list {
     border-bottom: 1px solid var(--text-secondary);
     display: grid;
@@ -140,7 +131,7 @@
   color: var(--text-primary);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .menu-item {
     padding-bottom: 20px;
   }

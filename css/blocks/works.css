@@ -12,9 +12,10 @@
 .works-title {
   margin: 24px 0;
   padding: 0;
+  text-transform: capitalize;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .works {
     padding: 0 24px;
   }
@@ -23,7 +24,7 @@
   }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 901px) {
   .works {
     padding: 0 11%;
   }
@@ -81,13 +82,14 @@
   height: 30px;
   cursor: pointer;
   fill: var(--bottom-primary);
-  transform: rotate(90deg);
+  transform: rotate(0deg);
   transition: 0.2s linear;
+  z-index: 3;
 }
 
-.work-header-arrow.active {
-  transition: rotate(270deg) 0.9s linear;
-  transform: rotate(270deg);
+.work-header-arrow .active {
+  transition: rotate(180deg) 0.9s linear;
+  transform: rotate(180deg);
   fill: var(--bottom-hover);
 }
 
@@ -108,12 +110,14 @@
   transition: height 1s;
   visibility: hidden;
 }
-.descr.active {
+
+.descr.active{
   height: 100%;
   background-color: var(--bg-primary-20);
   transform: height(100%);
   visibility: visible;
 }
+
 
 .descr-date {
   padding-top: 10%;

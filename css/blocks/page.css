@@ -38,7 +38,7 @@ body::-webkit-scrollbar:horizontal {
 
 body::-webkit-scrollbar {
   width:0.5rem !important;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
 }
 
 body::-webkit-scrollbar-track {
@@ -47,6 +47,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #006fb2 !important;
+  border-radius: 100px;
 }
 
 .page {
@@ -65,4 +66,11 @@ body {
   margin: 0;
   background-color: var(--bg-secondary);
   color: var(--text-primary);
+}
+
+@media (min-width: 1300px) {
+  .page {
+    width: 1300px;
+    margin: 0 auto;
+  }
 }

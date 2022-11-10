@@ -26,7 +26,7 @@
   /* z-index: 2; */
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
   .header-logo {
     width: 85%;
     grid-template-columns: max-content 1fr;
@@ -48,7 +48,7 @@
   } 
 }
 
-@media (min-width:801px) {
+@media (min-width:901px) {
   .header-logo {
     padding-top: 23px;
     column-gap: 4px;

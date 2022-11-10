@@ -15,7 +15,7 @@
         <img class="logo-img" src="img/LogoStr.png" alt="" />
         <p class="logo-title">Сергей Стрекалов</p>
         <p class="logo-txt">
-          Frontend&nbsp;-&nbsp;разработчик 35&nbsp;лет&nbsp;Москва
+          Frontend&nbsp;-&nbsp;разработчик 36&nbsp;лет&nbsp;Москва
         </p>
       </div>
       <nav class="header-menu">
@@ -35,10 +35,13 @@
             <a class="menu-link" href="">Skills</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="">Работы</a>
+            <a class="menu-link" href="">All</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="">Учеба</a>
+            <a class="menu-link" href="">HTML/CSS</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="">JS</a>
           </li>
           <li class="menu-item">
             <a class="menu-link" href="">Контакты</a>
@@ -105,12 +108,12 @@
         </div>
       </div>
       <div class="works">
-        <h4 class="works-title">Работы</h4>
+        <h4 class="works-title">all</h4>
         <div class="works-name">
           <div class="work-header">
             <div class="work-header-title">лендинг</div>
             <a class="work-header-arrow">
-              <svg class="work-header-arrow" width="30" height="30">
+              <svg class="header-arrow" width="30" height="30">
                 <use xlink:href="img/icons.svg#arrow"></use>
               </svg>
             </a>
@@ -143,21 +146,21 @@
           <div class="work-header">
             <div class="work-header-title">лендинг</div>
             <a class="work-header-arrow">
-              <svg class="work-header-arrow" width="30" height="30">
+              <svg class="header-arrow" width="30" height="30">
                 <use xlink:href="img/icons.svg#arrow"></use>
               </svg>
             </a>
-            <div class="work-header-txt">Психологическое кольсунтирование</div>
+            <div class="work-header-txt">Верстка одностраничного сайта</div>
           </div>
           <div class="work">
             <picture>
               <source
                 media="(max-width: 800px)"
-                srcset="img/mobile/daria_sml_0.png"
+                srcset="img/mobile/lnd_sml.png"
               />
               <source
                 media="(min-width: 801px)"
-                srcset="img/desktop/daria_bg_0.png"
+                srcset="img/desktop/lnd_bg.png"
               />
               <img class="work-img" src="img/foto_Str.png" alt="daria_screen" />
             </picture>
@@ -189,26 +192,6 @@
         menuHeader.classList.toggle("header-open");
         menuContent.classList.toggle("content-close");
       });
-
-      //active descr------------------------------
-      const headerArrow = document.querySelector(".work-header-arrow");
-      const workDescr = document.querySelector(".descr");
-
-      headerArrow.addEventListener("click", () => {
-        headerArrow.classList.toggle("active");
-        workDescr.classList.toggle("active");
-      });
-
-      //transparent header start-----------------------------
-      window.onscroll = function () {
-        var scrolled = window.pageYOffset || document.documentElement.scrollTop; // Получаем положение скролла
-        if (scrolled !== 0) {
-          document.querySelector(".header").style.backgroundColor =
-            "var(--bg-secondary-10a)";
-        } else {
-          document.querySelector(".header").style.backgroundColor = "none";
-        }
-      };
     </script>
   </body>
 </html>

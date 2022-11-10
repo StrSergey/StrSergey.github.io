@@ -22,7 +22,7 @@
   padding-bottom: 24px;
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
   .about {
     padding: 0 24px;
   }
@@ -31,7 +31,7 @@
   }
 }
 
-@media (min-width:801px) {
+@media (min-width:901px) {
   .about {
     padding: 0 11%;
   }

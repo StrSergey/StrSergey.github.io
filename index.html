@@ -110,15 +110,15 @@
       <div class="works">
         <h4 class="works-title">all</h4>
         <div class="works-name">
-          <div class="work-header">
-            <div class="work-header-title">лендинг</div>
-            <a class="work-header-arrow">
+          <a class="work-header">
+            <h2 class="work-header-title">лендинг</h2>
+            <button class="work-header-btn">
               <svg class="header-arrow" width="30" height="30">
                 <use xlink:href="img/icons.svg#arrow"></use>
               </svg>
-            </a>
+            </button>
             <div class="work-header-txt">Психологическое кольсунтирование</div>
-          </div>
+          </a>
           <div class="work">
             <picture>
               <source
@@ -143,15 +143,15 @@
           </div>
         </div>
         <div class="works-name">
-          <div class="work-header">
-            <div class="work-header-title">лендинг</div>
-            <a class="work-header-arrow">
+          <a class="work-header">
+            <h2 class="work-header-title">лендинг</h2>
+            <button class="work-header-btn">
               <svg class="header-arrow" width="30" height="30">
                 <use xlink:href="img/icons.svg#arrow"></use>
               </svg>
-            </a>
+            </button>
             <div class="work-header-txt">Верстка одностраничного сайта</div>
-          </div>
+          </a>
           <div class="work">
             <picture>
               <source
@@ -191,6 +191,16 @@
         menuList.classList.toggle("menu-list-open");
         menuHeader.classList.toggle("header-open");
         menuContent.classList.toggle("content-close");
+      });
+
+      //click for descr---------------
+      let mains = [...document.querySelectorAll(".works-name")];
+      mains.forEach((main) => {
+        let btn = main.querySelector(".work-header-btn"),
+          text = main.querySelector(".descr");
+        btn.addEventListener("click", () =>
+          text.classList.toggle("active")
+        );
       });
     </script>
   </body>

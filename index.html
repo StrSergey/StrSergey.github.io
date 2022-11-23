@@ -196,11 +196,18 @@
       //click for descr---------------
       let mains = [...document.querySelectorAll(".works-name")];
       mains.forEach((main) => {
+        // let btn = main.querySelector(".work-header-btn"),
+        //   descr = main.querySelector(".descr")
+        // btn.addEventListener("click", () => 
+        // descr.classList.toggle("active")
+
         let btn = main.querySelector(".work-header-btn"),
-          text = main.querySelector(".descr");
-        btn.addEventListener("click", () =>
-          text.classList.toggle("active")
-        );
+          descr = main.querySelector(".descr"),
+          arrow = main.querySelector(".header-arrow")
+        btn.addEventListener("click", () => {
+        descr.classList.toggle("active");
+        arrow.classList.toggle("active");
+      });
       });
     </script>
   </body>

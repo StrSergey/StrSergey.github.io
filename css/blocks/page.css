@@ -10,7 +10,7 @@
 
 :root {
   --text-primary: #fff;
-  --text-secondary: #828282; /*бледно белый*/
+  --text-secondary: #cbcbcb; /*бледно белый*/
   --bg-primary: #002650;
   --bg-primary-20: rgb(0,38,80,0.85);
   --bg-secondary: #0B0D12;

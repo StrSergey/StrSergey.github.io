@@ -38,8 +38,6 @@
   position:relative;
   padding: 0;
   margin: 0;
-  /* box-sizing: border-box;
-  border-bottom: 2px solid var(--text-secondary); */
 }
 
 .work {
@@ -69,6 +67,10 @@
   letter-spacing: 0.05em;
 }
 
+.works :nth-child(5) .work-header {
+  grid-template-columns: 20% 10% 10% 50%;
+}
+
 .work-header-title {
   text-transform: uppercase;
   font-size: 16px;
@@ -80,18 +82,6 @@
   font-size: 14px;
   text-align: right;
 }
-
-/* 
-старая кнопка удалить?*
-.work-header-arrow {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  fill: var(--bottom-primary);
-  transform: rotate(0deg);
-  transition: 0.2s linear;
-  z-index: 3;
-} */
 
 .header-arrow {
   rotate: 180deg;
@@ -105,9 +95,6 @@
 } 
 
 .work-header-btn {
-  /* outline: none; */
-  /* width: 30px;
-  height: 30px; */
   cursor: pointer;
   border: none;
   background: transparent;
@@ -125,6 +112,12 @@
 
 .work-header-btn:hover {
   fill: var(--bottom-hover);
+}
+
+.count {
+  margin: 0;
+  padding: 0;
+  width: 50px;
 }
 
 /* ---------------- descr ---------------- */

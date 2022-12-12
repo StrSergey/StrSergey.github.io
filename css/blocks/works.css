@@ -67,10 +67,6 @@
   letter-spacing: 0.05em;
 }
 
-.works :nth-child(5) .work-header {
-  grid-template-columns: 20% 10% 10% 50%;
-}
-
 .work-header-title {
   text-transform: uppercase;
   font-size: 16px;

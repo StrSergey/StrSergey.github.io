@@ -140,7 +140,7 @@
               <div class="descr-txt">
                 Разработка дизайна и простой анимации небольшого одностраничного
                 сайта для коуч-консультанта, материал был перенесен с Tilda с
-                доработкой.
+                доработкой, добавлена форма обратной связи на PHP, подключен чат-бот Tg и отбивка на почту.
               </div>
               <a class="descr-link" href="">error404</a>
             </div>
@@ -253,37 +253,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="works-name">
-          <a class="work-header">
-            <h2 class="work-header-title">Grid/сетка</h2>
-            <button class="work-header-btn">
-              <svg class="header-arrow" width="30" height="30">
-                <use xlink:href="img/icons.svg#arrow"></use>
-              </svg>
-            </button>
-            <div class="work-header-txt">Верстка блока на grid</div>
-          </a>
-          <div class="work">
-            <picture>
-              <source
-                media="(max-width: 800px)"
-                srcset="img/mobile/css2_sml.png"
-              />
-              <source
-                media="(min-width: 801px)"
-                srcset="img/desktop/css2_bg.png"
-              />
-              <img class="work-img" src="img/foto_Str.png" alt="grid_css_2_screen" />
-            </picture>
-            <div class="descr">
-              <div class="descr-date">июнь 2020</div>
-              <div class="descr-txt">
-                Разработка блока на Grid с использованием медиа-запросов и анимации на css
-              </div>
-              <a class="descr-link" href="">error404</a>
-            </div>
-          </div>
-        </div> -->
         <div class="works-name">
           <a class="work-header">
             <h2 class="work-header-title">Grid</h2>
@@ -292,21 +261,11 @@
                 <use xlink:href="img/icons.svg#arrow"></use>
               </svg>
             </button>
-            <button class="work-header-btn">
-              <input
-                type="range"
-                min="600"
-                max="1300"
-                step="200"
-                value
-                class="count"
-                id="grid-input"
-              />
-            </button>
+
             <div class="work-header-txt">Верстка блока на grid</div>
           </a>
           <div class="work">
-            <div class="container grid" id="grid-box">
+            <div class="container active grid" id="grid-box">
               <div class="box">
                 <div class="content">
                   <img src="img/gr1.png" alt="" />
@@ -361,6 +320,18 @@
                 </div>
               </div>
             </div>
+            <!-- <button class="grid-btn">
+              <svg class="grid-btn-svg" width="50" height="50">
+                <use xlink:href="img/icons.svg#mobile"></use>
+              </svg>
+            </button> -->
+            <label class="checkbox">
+              <svg class="grid-btn-svg" width="50" height="50">
+                <use xlink:href="img/icons.svg#mob_desk"></use>
+              </svg>
+              <input type="checkbox" checked="">
+              <span></span>
+            </label>
             <div class="descr">
               <div class="descr-date">июнь 2020</div>
               <div class="descr-txt">
@@ -409,43 +380,6 @@
       </div>
       <div class="works">
         <h4 class="works-title">JavaScript</h4>
-        <div class="works-name">
-          <a class="work-header">
-            <h2 class="work-header-title">лендинг</h2>
-            <button class="work-header-btn">
-              <svg class="header-arrow" width="30" height="30">
-                <use xlink:href="img/icons.svg#arrow"></use>
-              </svg>
-            </button>
-            <div class="work-header-txt">Психологическое кольсунтирование</div>
-          </a>
-          <div class="work">
-            <picture>
-              <source
-                media="(max-width: 800px)"
-                srcset="img/mobile/daria_sml_0.png"
-              />
-              <source
-                media="(min-width: 801px)"
-                srcset="img/desktop/daria_bg_0.png"
-              />
-              <img
-                class="work-img"
-                src="img/foto_Str.png"
-                alt="landing_1_screen"
-              />
-            </picture>
-            <div class="descr">
-              <div class="descr-date">май 2020</div>
-              <div class="descr-txt">
-                Разработка дизайна и простой анимации небольшого одностраничного
-                сайта для коуч-консультанта, материал был перенесен с Tilda с
-                доработкой.
-              </div>
-              <a class="descr-link" href="">error404</a>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
     <script>
@@ -475,13 +409,7 @@
           arrow.classList.toggle("active");
         });
       });
-
-      //ползунок для grid
-      // function gridWidth() {
-	    //   var rng=document.getElementById('grid-input'); //rng - это Input
-      //   var contW=document.getElementById('grid-box'); // contW - блок container
-
-      // }
+      //grid button--------------------
 
     </script>
   </body>

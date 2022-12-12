@@ -13,12 +13,21 @@
     position: relative;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
     grid-template-rows: minmax(100px, auto);
     padding: 7px;
-    margin-bottom: 20px;
     grid-auto-flow: dense;
     grid-gap: 7px;
+}
+
+.container.active {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+}
+
+.container.active .box {
+    grid-column: unset !important;
+    grid-row: unset !important;
 }
 
 .container .box {
@@ -40,7 +49,6 @@
     position: relative;
     max-width: 20px;
     min-width: 8px;
-    margin-bottom: 3px;
 }
 
 .container .box:nth-child(1) {
@@ -63,15 +71,69 @@
     grid-row: span 1;
 }
 
-@media (max-width: 801px) {
-    .container {
-        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-        grid-template-rows: minmax(auto, auto);
-    }
+/*  button  */
+  .checkbox{
+    display: inline-block;
+    padding: 5px 5px 5px 38px;
+    margin: 10px 0;
+    position: relative;
+    cursor: pointer;
+  }
+  .checkbox input{
+    position: absolute;
+    opacity: 0;
+    cursor: inherit;
+  }
+  .checkbox span{
+    display: inline-block;
+    font: normal 12px/16px Arial;
+    padding: 0;
+  }
+  .checkbox span:before,
+  .checkbox span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transition: .3s;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .checkbox span:before{
+    left: 0;
+    height: 32px;
+    margin-top: -16px;
+    width: 56px;
+    border-radius: 16px;
+    background: transparent;
+  }
+  .checkbox span:after{
+    left: 2px;
+    height: 28px;
+    width: 28px;
+    margin-top: -14px;
+    background: (--bottom-primary);
+    border-radius: 50%;
+    border: red 1px solid;
+  }
+  
+  .checkbox input:checked + span:before{
+    background-color: (--bg-primary);
+  }
+  .checkbox input:checked + span:after{
+    left: 26px;
+  }
+  
+  .checkbox input:focus + span:before{
+    box-shadow: 0 0 0 3px rgba(50,150,255,.2);
+  }
+  
+  .checkbox input:disabled + span{
+    opacity: .35;
+  }
+  .checkbox input:disabled + span:before{
+    background: #999;
+  }
 
-    .container .box {
-        grid-column: unset !important;
-        grid-row: unset !important;
-    }
 
-}
+
